@@ -1,6 +1,6 @@
 #!/usr/bin/env Rscript
 
-# Rule-based classification of reverse-transcriptase-containing contigs from GFF3
+# Rule-based classification of reverse-transcriptase (RT)-containing contigs from GFF3
 # Usage: Rscript classify_rt_contigs.R seq_genomes.gff3 [output_prefix]
 # Outputs:
 #   <prefix>_rt_contig_classification.tsv
