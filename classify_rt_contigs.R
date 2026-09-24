@@ -152,7 +152,7 @@ for (i in seq_along(seqs)) {
     "Retrotransposon-like: LTR" = score_ltr,
     "Retrovirus-related" = score_retrovirus,
     "Group II intron-like" = score_groupII,
-    "Cellular RTase-containing: telomerase-like" = score_cellular,
+    "Cellular RT-containing: telomerase-like" = score_cellular,
     "Other retroelement: retron-like" = score_retron,
     "Other retroelement: DGR-like" = score_dgr,
     "Other retroelement: CRISPR-RT-like" = score_crispr
@@ -183,7 +183,7 @@ for (i in seq_along(seqs)) {
   }
   # Group II and telomerase annotations are highly diagnostic.
   if (f_groupII) { detailed <- "Group II intron-like"; confidence <- "high" }
-  if (f_telomerase && !f_groupII) { detailed <- "Cellular RTase-containing: telomerase-like"; confidence <- "high" }
+  if (f_telomerase && !f_groupII) { detailed <- "Cellular RT-containing: telomerase-like"; confidence <- "high" }
 
   # Broad class requested by user
   broad <- if (grepl("^Retrotransposon-like", detailed)) {
@@ -192,8 +192,8 @@ for (i in seq_along(seqs)) {
     "Retrovirus-related"
   } else if (grepl("^Group II intron-like", detailed)) {
     "Group II intron-like"
-  } else if (grepl("^Cellular RTase-containing", detailed)) {
-    "Cellular RTase-containing"
+  } else if (grepl("^Cellular RT-containing", detailed)) {
+    "Cellular RT-containing"
   } else if (grepl("^Other retroelement", detailed)) {
     "Other retroelement"
   } else if (grepl("^Ambiguous", detailed)) {
