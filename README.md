@@ -24,7 +24,7 @@ RT-containing contigs can be assigned to:
 -   *Ambiguous RT-containing*
 -   *Unclassified RT-containing*
 
-Classification is based on weighted evidence from annotations such as RT subtype, RNase H, integrase, endonuclease, retroviral protease, Gag/capsid, Env, and other characteristic domains.
+Classification is based on weighted evidence from annotations such as RT subtype, RNase H, integrase, endonuclease, retroviral protease, gag/capsid, env, and other characteristic domains.
 
 ## Requirements
 
